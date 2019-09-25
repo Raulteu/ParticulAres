@@ -1,0 +1,560 @@
+body {
+    font-family: sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    font-size: 14pt;
+    /*Magia negra https://leaverou.github.io/css3patterns/*/
+    background-color: #e7e7e7;
+    background-size: 20px 20px;
+    margin: 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    height: 100%;
+}
+
+.estrellitas {
+    display: flex;
+}
+#form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.star{
+  color: grey;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.star:hover,
+.star:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+
+
+html{
+    min-height: 100%;
+    height: 100%;
+}
+
+a {
+    color: black;
+}
+
+a:visited {
+    color:black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo > a > img {
+    width: 6em;
+    margin: 0 0 0 -0.3em;
+}
+
+#contenedor {
+    margin: 1% 5% 1% 5%;
+    position: relative;
+    color: black;
+}
+
+.login {
+    display: block;
+    justify-content: center;
+    background-color: rgb(243, 179, 61);
+    border: 0.1em solid #333232;
+    font-size : 110%;
+    margin: 2% 20% 2% 20%;
+    padding: 0.37rem 0.75rem 0.37rem 0.75rem;
+    border-radius: 0.3em;
+    color: #333232;
+}
+
+.centeredLabel {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.Error {
+    float: bottom;
+    color: red;
+    font-size : 120%;
+    text-align:center;
+
+}
+
+.header {
+    background-color: #333232;
+    padding: 0.37rem 0rem 0rem 0rem;
+    color: #F9F9F9;
+    clear: both;
+    border: 0.1em solid black;
+}
+
+.left-header {
+    display: inline-flex;
+}
+
+.right-header {
+    float: right;
+    display: inline-flex;
+}
+
+.button-header{
+    margin-left: 1em;
+}
+
+#busqueda {
+    display:flex;
+}
+
+.search-index{
+    display: inline-block;
+}
+
+
+footer {
+    height: auto;
+    text-align:center;
+    background-color: #333232;
+    padding: 0.37rem 0.75rem 0.37rem 0.75rem;
+    color: white;
+    margin-top: auto;
+    align-self: flex-end;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.5em;
+}
+
+#inicio {
+    text-align:left;
+}
+
+div.mensajes {
+    border-top: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 20em;
+    overflow-y: scroll;
+    width: 90%;
+    margin: 1em 5% 1em 5%;
+    box-shadow: 0.5em 0.5em 1em 0 rgba(112,112,112,0.43);
+
+}
+
+div.msgIN, div.msgOUT {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 8px;
+    padding-top: 0;
+    margin-inline-end: 5em;
+    margin-top: 1em;
+    word-wrap: anywhere;
+}
+
+div.msgIN {
+    text-align: left;
+    background-color: #dce6e9;
+    border-radius: 0px 18px 18px 18px;
+    margin-left: 5%; 
+    margin-right: 7%;
+    align-self: flex-start;   
+}
+
+div.msgOUT {
+    text-align: right;
+    background-color: rgb(169, 183, 184);
+    border-radius: 18px 0px 18px 18px;
+    margin-right: 5%;
+    margin-left: 7%;
+    align-self: flex-end;
+}
+
+div.conversacion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+span.timeIN, span.timeOUT {
+    font-size: 12pt;
+    color: #4d3900;
+    margin-right: 2px;
+}
+
+span.timeIN::before , span.timeOUT::before{
+    content:"🕛";
+}
+
+textarea.mensajeSend {
+    resize: none;
+    border-radius: 10px;
+    padding: 1em;
+    width: 60%;
+}
+
+div.textoMensajes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formEnviar {
+    clear: both;
+}
+
+.timeIN {
+    float: left;
+}
+
+.title {
+    text-align:center;
+    color:black;
+}
+
+.textoMensajes {
+    text-align:center;
+    color:black;
+}
+
+.botonMensajes {
+    text-align:center;
+}
+
+.chats {
+    margin: 1.5em 5em 1.5em 5em;
+    background-color: rgb(184, 178, 169);
+    border-radius: 15px;
+    border: 2px solid black;
+    color: black;
+}
+
+.chat {
+    margin: 0% 3% 3% 3%;
+}
+
+.button {
+    border-radius: 15px;
+    padding: 0.37rem 0.75rem 0.37rem 0.75rem;
+    align-self: center;
+}
+
+.button.center {
+    display:flex;
+    justify-content: center;
+}
+
+.right {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+input {
+    border-radius: 5px;
+    padding: 0.37rem 0.75rem 0.37rem 0.75rem;
+    font-size: 100%;
+}
+
+select {
+    border-radius: 5px;
+    padding: 0.37rem 0.75rem 0.37rem 0.75rem;
+    font-size: 100%;
+}
+
+.fullAd, .minAd {
+    box-shadow: 0.5em 0.5em 1em 0 rgba(112,112,112,0.43);
+    margin-bottom: 2em;
+    border: 0.1em solid black;
+}
+
+.adName {
+    display: flex;
+    flex-wrap: wrap;
+    background: #333232;
+    color: #F9F9F9;
+}
+
+.fullAd > .adName {
+    justify-content: center;
+}
+
+.minAd > .adName {
+    justify-content: left;
+}
+
+.ad {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.minAd > .ad {
+    flex-wrap: wrap;
+}
+
+.ad > .orangeBack {
+    background: rgb(243, 179, 61);
+    padding: 1em;
+    margin-bottom: auto;
+}
+
+.ad > .simpleBack {
+    flex-grow:9;
+    background: rgb(255, 255, 255);
+    padding: 1em;
+}
+
+.minAd > .ad {
+    justify-content: left;
+}
+
+.perfilProfe{
+    text-align:left;
+    color: black;
+    border: 2px solid black;
+    border-radius: 0.2em;
+    box-shadow: 0.5em 0.5em 1em 0 rgba(112,112,112,0.43);
+    font-size : 120%;
+    
+}
+
+.redButton, #redButton {
+    background-color: rgb(243, 179, 61);
+    border-radius: 0.2em;
+    box-shadow: 0.5em 0.5em 1em 0 rgba(112,112,112,0.43);
+    align-items: center;
+    height: 100%;
+    padding: 0.3em 0.5em 0.75em 0.5em;
+}
+
+#redButton {
+    /* Calculado a mano para que ocupe lo mismo que el resto*/
+    max-height: 21.6px; 
+}
+
+#profile{
+    display: inline-flex;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+}
+
+.comment {
+    border: 0.17em solid black;
+    margin: 1em;
+    border-radius: 0.7em;
+    padding: 0.5em;
+    background-color: rgb(184, 178, 169);
+}
+
+p.adDescription {
+    max-width: 50em;
+}
+
+.submitLink {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.submitLink:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.submitLinkProfile {
+    border: none;
+    background: none;
+    font-size: 14pt;
+    padding: 0;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 10px;
+}
+
+.messageScroll {
+    overflow-y: scroll;
+    height: 3em;
+}
+
+.centrar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.userData {
+    display: flex;
+    float: left;
+}  
+
+.mainUserData {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.marginLeft {
+    margin-left: 275px;
+}
+
+.users{
+    margin-top: 5px;
+    border: 0.1em solid #333232;
+    padding: 0.37rem 0.75rem 0.37rem 0.75rem;
+}
+
+
+.download{
+    color: #333232;
+    text-decoration: underline;
+}
+
+.download:link{
+    text-decoration: underline;
+}
+  
+.download:hover {
+    color:rgb(243, 179, 61) ;
+    text-decoration: underline;
+  }
+  
+.download:active {
+    text-decoration: underline;
+}
+
+.horario {
+    line-height: 0.2em;
+}
+
+.horario::first-line{
+    text-decoration: underline;
+}
+
+.botonHorario {
+    margin: 0 0 1em 0;
+}
+
+
+.nuevochat{
+    display: block;
+    justify-content: center;
+    background-color: rgb(243, 179, 61);
+    border: 0.1em solid #333232;
+    font-size : 110%;
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 0.37rem 0.75rem 0.37rem 0.75rem;
+    border-radius: 0.3em;
+    color: #333232;
+}
+
+
+
+.chatusuario{
+    margin-top: 5px;
+    padding: 0.37rem 0.75rem 0.37rem 0.75rem;
+}
+
+.profilePic {
+    max-width: 250px;
+    min-width: 250px;
+    max-height: 250px;
+    min-height: 250px;
+    box-shadow: 0.5em 0.5em 1em 0 rgba(112,112,112,0.43);
+}
+
+#mapid {
+    height: 30em;
+}
+
+.miembros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.miembro {
+  box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2);
+  width: 20em;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+.imgMiembros {
+    border-radius: 1em 1em 0 0;
+    width: 20em;
+}
+
+.infoMiembro {
+    padding: 1em;
+}
+
+a.footerLink {
+    color: lightgray;
+}
+
+
+/*Ya no hay arcoiris por el bien de la corrección :(*/
+a > .rainbow {
+  
+    /* Font options */
+   text-shadow: 2px 2px 4px #000000;
+   font-size:40px;
+   color: orange;
+ }

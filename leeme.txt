@@ -1,0 +1,45 @@
+ParticulAres
+--------------------------------------------------------------------
+
+Además de lo implementado en la entrega anterior, se ha implementado:
+
+1. Calendario de clases
+Cualquier usuario puede agregar las clases que quieran con el horario dispuestos por el profesor a un calendario propio. También pueden borrarse clases agregadas así.
+
+2. Borrado por ajax.
+Ahora se pueden borrar mensajes, comentarios, clases...
+
+3. Mis clases
+Un profesor puede ver y borrar todas las clases que ha creado
+
+4. Puntuaciones
+Los usuarios se pueden puntuar entre ellos, y solo pueden puntuar una vez.
+
+5. Foto de perfil
+Se puede subir un archivo como imagen para poner como foto de perfil
+
+6. Transeferencia de archivos por el chat
+Se pueden subir y descargar archivos pequeños por el chat ahora.
+
+7. Validación de formularios con JS
+Los formularios se validan ahora también antes de ser enviados, aunque se siguen validando después.
+
+8. Selección de zona en Google Maps
+Se permite elegir la localización de la clase en un mapa interactivo generado por google maps.
+
+9. Panel de admin
+El administrador tiene un sencillo panel por el cual puede borrar usuarios y anuncios.
+
+------------------------------------------------------------------------------------------------------------------------------
+Los usuarios registrados como alumnos que se pueden utilizar para comprobaciones son:
+usuario1 (contraseña: usuario1)
+usuario2 (contraseña: usuario2)
+
+Los registrados como profesores son:
+profesor (contraseña: profesor)
+profesor2 (contraseña: profesor2)
+profesor3 (contraseña: profesor3)
+
+Los usuarios registrados como admin son:
+admin (contraseña: admin)
+
